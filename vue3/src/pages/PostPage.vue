@@ -1,6 +1,7 @@
 <template>
   <div class="liveChatApp">
     <h1>Ласкаво просимо до живого блогу</h1>
+    <div><h3>Сортування</h3></div>
     <my-select
           v-model="selectedSort"
           :options="sortOptions"
@@ -31,6 +32,7 @@ export default {
     return {
       posts: [],
       selectedSort: '',
+      searchQuery: '',
       sortOptions: [
         {value: 'title', name: 'По назві'},
         {value: 'body', name: 'По змісту'}
