@@ -1,17 +1,17 @@
 <template>
   <form @submit.prevent>
-    <input
+    <my-input
         v-model="post.title"
         class="input"
         type="text"
         placeholder="Назва посту"
-    >
-    <input
+    />
+    <my-input
         v-model="post.body"
         class="input"
         type="text"
         placeholder="Тут створить свій першій пост"
-    >
+    />
     <my-button
         class="btn"
         style="align-self: flex-end; margin-top: 15px;"
@@ -23,7 +23,10 @@
 </template>
 
 <script>
+import MyInput from "@/components/UI/MyInput.vue";
+
 export default {
+  components: {MyInput},
   data() {
     return {
       post: {
@@ -51,10 +54,5 @@ form{
   display: flex;
   flex-direction: column;
 }
-.input{
-  width: 100%;
-  border: 2px solid black;
-  margin-top: 15px;
-  padding: 10px 15px;
-}
+
 </style>

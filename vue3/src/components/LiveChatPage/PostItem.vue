@@ -4,7 +4,8 @@
       <div>Назва посту {{ post.title }}</div>
       <div>Опит {{ post.body }}</div>
     </div>
-    <div class="postBtns">
+    <!--Створення кнопки видалення посту -->
+    <div>
       <my-button>Видалити пост</my-button>
     </div>
   </div>
@@ -29,8 +30,5 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.postBtns{
-
 }
 </style>
