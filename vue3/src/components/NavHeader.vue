@@ -2,11 +2,10 @@
   <header>
     <div class="container">
         <ul>
-          <li><router-link to="/about">О нас</router-link></li>
-          <li><router-link to="/article">Article Collection</router-link></li>
-          <li><router-link to="/live_chat">LiveChat</router-link></li>
-          <li><router-link to="/contact">Контакты</router-link></li>
-          <li><router-link to="/reg">Регистрация</router-link></li>
+          <li><router-link to="/about">Про нас</router-link></li>
+          <li><router-link to="/article">Живий чат</router-link></li>
+          <li><router-link to="/contact">Контакти</router-link></li>
+          <li><router-link to="/sign_in">Реєстрація</router-link></li>
         </ul>
       </div>
   </header>
