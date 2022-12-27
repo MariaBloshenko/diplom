@@ -10,7 +10,8 @@
       />
     </transition-group>
   </div>
-  <h2 v-else style="color: purple">Наразі постів немає. Створить перший!</h2>
+  <h2
+      v-else style="color: purple">Наразі постів немає. Створить перший!</h2>
 </template>
 
 <script>
@@ -31,11 +32,11 @@ export default {
 <style scoped>
 .postList-item {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 7px;
 }
 .postList-enter-active,
 .postList-leave-active {
-  transition: all 0.7s ease;
+  transition: all 0.4s ease;
 }
 .postList-enter-from,
 .postList-leave-to {
@@ -43,6 +44,6 @@ export default {
   transform: translateX(130px);
 }
 .postList-move {
-  transition: transform 0.8s ease;
+  transition: transform 0.2s ease;
 }
 </style>

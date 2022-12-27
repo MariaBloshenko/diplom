@@ -4,7 +4,7 @@
     <my-input
         v-model="searchQuery"
         placeholder="Пошук..."
-        style="margin-bottom: 30px; width: 250px"
+        style="margin-bottom: 20px; width: 250px"
     />
     <div><h3>Сортування</h3></div>
     <my-select

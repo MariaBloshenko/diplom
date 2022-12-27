@@ -14,7 +14,7 @@
     />
     <my-button
         class="btn"
-        style="align-self: flex-end; margin-top: 15px;"
+        style="align-self: flex-end; margin-top: 10px"
         @click="createPost"
     >
       Створити пост

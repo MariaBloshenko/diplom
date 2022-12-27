@@ -2,8 +2,8 @@
   <div class="post">
     <div>
       <div>{{ post.id }}</div>
-      <div>Назва посту: {{ post.title }}</div>
-      <div>Опиc: {{ post.body }}</div>
+      <div>НАЗВА ПОСТУ: {{ post.title }}</div>
+      <div>ОПИС: {{ post.body }}</div>
     </div>
     <!--Створення кнопки видалення посту -->
     <div>
@@ -28,9 +28,9 @@ export default {
 
 <style scoped>
 .post{
-  padding: 15px;
+  padding: 7px;
   border: 2px solid black;
-  margin-top: 15px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
