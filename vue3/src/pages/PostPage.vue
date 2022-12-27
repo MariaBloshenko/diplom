@@ -1,16 +1,22 @@
 <template>
   <div class="liveChatApp">
     <h1>Ласкаво просимо до живого блогу</h1>
+    <my-input
+        v-model="searchQuery"
+        placeholder="Пошук..."
+        style="margin-bottom: 30px; width: 250px"
+    />
     <div><h3>Сортування</h3></div>
     <my-select
-          v-model="selectedSort"
-          :options="sortOptions"
-      />
+        v-model="selectedSort"
+        :options="sortOptions"
+        style="border: 2px black solid;"
+        />
     <post-form
-          @create="createPost"
-      />
+        @create="createPost"
+    />
     <post-list
-        :posts="sortedPosts"
+        :posts="sortAndSearchedPost"
         @remove="removePosts"
     />
   </div>
@@ -22,8 +28,11 @@ import PostList from "@/components/LiveChatPage/PostList.vue";
 import axios from "axios";
 import MyButton from "@/components/UI/MyButton.vue";
 import MySelect from "@/components/UI/MySelect.vue";
+import MyInput from "@/components/UI/MyInput.vue";
+
 export default {
   components: {
+    MyInput,
     MySelect,
     MyButton,
     PostForm, PostList
@@ -35,7 +44,7 @@ export default {
       searchQuery: '',
       sortOptions: [
         {value: 'title', name: 'По назві'},
-        {value: 'body', name: 'По змісту'}
+        {value: 'body', name: 'За змістом'}
       ]
     }
   },
@@ -69,6 +78,9 @@ export default {
   computed: {
     sortedPosts() {
       return [...this.posts].sort((post1, post2) => post1[this.selectedSort]?.localeCompare(post2[this.selectedSort]))
+    },
+    sortAndSearchedPost() {
+      return this.sortedPosts.filter(post => post.title.includes(this.searchQuery))
     }
   }
 }
@@ -80,11 +92,8 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
-.liveChatApp{
-  padding: 20px;
-}
 .appBtns{
-  margin: 15px;
+  margin: 15px 0;
   display: flex;
   justify-content: space-between;
 }

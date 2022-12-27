@@ -2,7 +2,7 @@
   <div class="post">
     <div>
       <div>Назва посту {{ post.title }}</div>
-      <div>Опит {{ post.body }}</div>
+      <div>Опиc {{ post.body }}</div>
     </div>
     <!--Створення кнопки видалення посту -->
     <div>

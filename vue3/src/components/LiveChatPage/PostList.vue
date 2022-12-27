@@ -1,9 +1,6 @@
 <template>
   <div v-if="posts.length > 0">
     <h1>Сторінка з постами</h1>
-    <my-input
-        v-model="searchQuery"
-    />
     <transition-group name="postList">
       <post-item
           v-for="post in posts"
