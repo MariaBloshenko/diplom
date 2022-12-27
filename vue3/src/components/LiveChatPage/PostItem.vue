@@ -6,7 +6,10 @@
     </div>
     <!--Створення кнопки видалення посту -->
     <div>
-      <my-button>Видалити пост</my-button>
+      <my-button
+      @click="$emit('remove', post)">
+        Видалити пост
+      </my-button>
     </div>
   </div>
 </template>

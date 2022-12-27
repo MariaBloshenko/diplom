@@ -5,6 +5,7 @@
     />
     <post-list
         :posts="posts"
+        @remove="removePosts"
     />
   </div>
 </template>
@@ -26,10 +27,15 @@ export default {
     }
   },
   methods: {
+    //Створення функції додавання посту
     createPost(post) {
       console.log(post)
       this.posts.push(post)
     },
+    //Створення функції видалення посту
+    removePosts(post) {
+      this.posts = this.posts.filter(p => p.id !== post.id)
+    }
   }
 }
 </script>
