@@ -1,12 +1,18 @@
 <template>
-  <div class="post" v-for="post in posts">
-    <div>Назва посту {{ post.title }}</div>
-    <div>Опит {{ post.body }}</div>
+  <div>
+    <h1>Сторінка з постами</h1>
+    <post-item
+        v-for="post in posts"
+        :post="post"
+    />
   </div>
 </template>
 
 <script>
+import PostItem from "@/components/LiveChatPage/PostItem.vue";
+
 export default {
+  components: {PostItem},
   props: {
     posts: {
       type: Array,
@@ -17,9 +23,5 @@ export default {
 </script>
 
 <style scoped>
-.post{
-  padding: 15px;
-  border: 2px solid black;
-  margin-top: 15px;
-}
+
 </style>

@@ -1,6 +1,5 @@
 <template>
   <div class="liveChatApp">
-    <h1>Сторінка з постами</h1>
     <post-form
         @create="createPost"
     />
