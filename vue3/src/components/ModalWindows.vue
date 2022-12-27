@@ -44,7 +44,7 @@ body{
   justify-content: center;
   align-items: center;
   width: 100vw;
-  min-height: 100vh;
+  height: 80vh;
   overflow-x: hidden;
 }
 .btnModalPost,
@@ -58,7 +58,7 @@ body{
   background-image: linear-gradient(to right, #CC2E5D, #FF5858);
   border-radius: 8px;
   color: #FFF;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
   transition: 0.4s ease-out;
@@ -79,7 +79,7 @@ body{
   transform: translate(-50%, -50%);
   z-index: 99;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   background-color: #FFF;
   border-radius: 16px;
   padding: 25px;

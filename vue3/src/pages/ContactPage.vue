@@ -2,7 +2,9 @@
   <div class="contactPage">
     <p>Знайшли друкарську помилку? Пишіть: m16091987m@gmail.com</p>
     <p>Telegram: @maru1609</p>
-<hr>
+    <br>
+    <hr>
+    <br>
     <p>ЗАЛИШИЛИСЬ ПИТАННЯ?</p>
     <p>Якщо у вас залишилися будь-які питання, дайте нам знати, і ми обов'язково допоможемо:</p>
 
@@ -29,6 +31,6 @@ export default defineComponent({
 .contactPage{
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
-  margin-top: 60px;
+  padding-top: 90px;
 }
 </style>
