@@ -12,12 +12,13 @@
         type="text"
         placeholder="Тут створить свій першій пост"
     >
-    <button
+    <my-button
         class="btn"
+        style="align-self: flex-end; margin-top: 15px;"
         @click="createPost"
     >
       Створити пост
-    </button>
+    </my-button>
   </form>
 </template>
 
@@ -55,13 +56,5 @@ form{
   border: 2px solid black;
   margin-top: 15px;
   padding: 10px 15px;
-}
-.btn{
-  align-self: flex-end;
-  margin-top: 15px;
-  padding: 10px 15px;
-  background: black;
-  color: white;
-  border: 2px solid black;
 }
 </style>

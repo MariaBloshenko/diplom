@@ -1,7 +1,12 @@
 <template>
   <div class="post">
-    <div>Назва посту {{ post.title }}</div>
-    <div>Опит {{ post.body }}</div>
+    <div>
+      <div>Назва посту {{ post.title }}</div>
+      <div>Опит {{ post.body }}</div>
+    </div>
+    <div class="postBtns">
+      <my-button>Видалити пост</my-button>
+    </div>
   </div>
 </template>
 
@@ -21,5 +26,11 @@ export default {
   padding: 15px;
   border: 2px solid black;
   margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.postBtns{
+
 }
 </style>
