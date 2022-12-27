@@ -15,10 +15,8 @@
 </template>
 
 <script>
-
 import {defineComponent} from "vue";
 import ModPost from "@/components/ModalWindows.vue";
-
 export default defineComponent({
   components: {ModPost}
 })
