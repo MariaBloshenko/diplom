@@ -1,13 +1,15 @@
 <template>
+  <div>
 
+  </div>
 </template>
 
 <script>
 export default {
-  name: "LiveChatPage"
+
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

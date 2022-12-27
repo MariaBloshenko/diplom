@@ -3,7 +3,7 @@
     <div class="container">
         <ul>
           <li><router-link to="/about">Про нас</router-link></li>
-          <li><router-link to="/article">Живий чат</router-link></li>
+          <li><router-link to="/chat">Живий чат</router-link></li>
           <li><router-link to="/contact">Контакти</router-link></li>
           <li><router-link to="/sign_in">Реєстрація</router-link></li>
         </ul>

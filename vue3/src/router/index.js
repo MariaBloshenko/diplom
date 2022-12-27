@@ -18,8 +18,8 @@ const router = createRouter({
       component: import("@/pages/ContactPage.vue"),
     },
     {
-      path: '/article',
-      name: "article",
+      path: '/chat',
+      name: "chat",
       component: import("@/pages/PostPage.vue"),
     },
     {

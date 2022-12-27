@@ -1,6 +1,6 @@
 <template>
   <div class="root">
-    <h2>Создать аккаунт</h2>
+    <h2>Створити акаунт</h2>
     <p>
       <input
           type="text"
@@ -28,7 +28,7 @@
         {{ v$.password.confirm.$errors[0].$message }}
       </span>
     </p>
-    <button @click="submitForm">Подтвердить</button>
+    <button @click="submitForm">Підтвердити</button>
   </div>
 </template>
 
